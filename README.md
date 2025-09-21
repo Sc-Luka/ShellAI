@@ -1,18 +1,18 @@
 ShellAI v1.0
 
--ShellAI is a cross-platform terminal tool that allows you to:
+  - ShellAI is a cross-platform terminal tool that allows you to:
 
-Run system commands safely
+  - Run system commands safely
 
-Get AI-generated terminal commands from natural language input
+  - Get AI-generated terminal commands from natural language input
 
-Receive explanations of commands
+  - Receive explanations of commands
 
-Maintain and manage command history
+  - Maintain and manage command history
 
-Detect gibberish or unsafe inputs
+  - Detect gibberish or unsafe inputs
 
-It integrates with OpenAI/OpenRouter to suggest terminal commands or generate code snippets.
+  - It integrates with OpenAI/OpenRouter to suggest terminal commands or generate code snippets.
 ---
 Features
 
