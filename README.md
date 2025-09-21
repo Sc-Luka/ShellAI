@@ -32,9 +32,8 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/Sc-Luka/ShellAI.git
+git clone https://github.com/yourusername/ShellAI.git
 cd ShellAI
-
 
 Make sure you have C++17 compiler:
 
