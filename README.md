@@ -16,17 +16,17 @@ ShellAI v1.0
 ---
 Features
 
-  ✅ Cross-platform: Windows, Linux
+   ✅ Cross-platform: Windows, Linux
 
-  ✅ Command history with ! rerun and ~ delete
+   ✅ Command history with ! rerun and ~ delete
 
-  ✅ Gibberish input detection
+   ✅ Gibberish input detection
 
-  ✅ AI-suggested commands for any system task
+   ✅ AI-suggested commands for any system task
 
-  ✅ Explanation mode for understanding commands
+   ✅ Explanation mode for understanding commands
 
-  ✅ Logs all user inputs, AI suggestions, and terminal output
+   ✅ Logs all user inputs, AI suggestions, and terminal output
 ---
 Installation
 
@@ -65,37 +65,37 @@ shellai.exe    # Windows
 
 Commands:
 
-exit → quit ShellAI
+- exit → quit ShellAI
 
-clear → clear terminal screen
+- clear → clear terminal screen
 
-history → view past commands
+- history → view past commands
 
-!<number> → rerun command from history
+- !<number> → rerun command from history
 
-~<number> → delete command from history
+- ~<number> → delete command from history
 
 AI Integration:
 
 Type natural language queries like:
 
-List all files in home directory
-Write a C++ program to calculate factorial
-Show disk usage of current folder
+- List all files in home directory
+- Write a C++ program to calculate factorial
+- Show disk usage of current folder
 
 
 The AI will suggest a terminal command or code snippet.
 
-Press E to get an explanation of any command.
+- Press E to get an explanation of any command.
 ---
 Logging
 
-All terminal input, AI suggestions, and command output are logged in ai_terminal.log.
+- All terminal input, AI suggestions, and command output are logged in ai_terminal.log.
 
-Command history is saved in ai_terminal_history.txt
+- Command history is saved in ai_terminal_history.txt
 ---
 Security
 
-Detects dangerous commands like rm -rf /, shutdown, dd if=.
+- Detects dangerous commands like rm -rf /, shutdown, dd if=.
 
-Prompts user for confirmation before executing them.
+- Prompts user for confirmation before executing them.
