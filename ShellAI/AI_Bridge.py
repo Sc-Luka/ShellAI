@@ -14,11 +14,16 @@ if not api_key:
 if not api_key:
     sys.exit("API key is required! Set OPENAI_API_KEY in your environment.")
 
-# --- OpenRouter client setup ---
+# --- OpenRouter client setup (DeepSeek / other models through OpenRouter) ---
 client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
+    base_url="https://openrouter.ai/api/v1",  # OpenRouter endpoint
     api_key=api_key,
 )
+
+# --- If you want to use GPT directly (OpenAI endpoint), uncomment this instead ---
+# client = OpenAI(
+#     api_key=api_key,  # OpenAI official endpoint (default base_url)
+# )
 
 # --- Mode handling ---
 mode = "normal"
@@ -70,7 +75,12 @@ def ask_openai(prompt, mode="normal"):
 
         # --- API call ---
         response = client.chat.completions.create(
+            # For DeepSeek on OpenRouter
             model="openai/gpt-4o-mini",
+
+            # If you want to switch to GPT official API, just use (example):
+            # model="gpt-4o-mini",  # or "gpt-4.1", "gpt-3.5-turbo", etc.
+
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_message}
