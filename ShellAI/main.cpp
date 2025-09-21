@@ -284,14 +284,7 @@ int main(){
             break; // exit main loop
         }
 
-        if(user_input == "clear"){
-            #ifdef _WIN32
-                system("cls");
-            #else
-                system("clear");
-            #endif
-            logger.info("Screen cleared.");
-        }
+        if(user_input == "clear"){ os_type == "Linux" ? system("clear") : system("clr"); logger.info("Screen cleared."); continue; }
            
         if (!user_input.empty() && (user_input[0] == '!' || user_input[0] == '~')) {
             char action = user_input[0];
