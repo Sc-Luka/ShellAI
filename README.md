@@ -1,6 +1,6 @@
 ShellAI v1.0
 
-ShellAI is a cross-platform terminal tool that allows you to:
+-ShellAI is a cross-platform terminal tool that allows you to:
 
 Run system commands safely
 
