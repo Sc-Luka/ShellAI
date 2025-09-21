@@ -9,7 +9,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 if not api_key:
     # fallback: hardcoded key 
-    api_key = "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"
+    api_key = "YOUR_API_KEY"
 
 if not api_key:
     sys.exit("API key is required! Set OPENAI_API_KEY in your environment.")
